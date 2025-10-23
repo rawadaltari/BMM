@@ -1,0 +1,29 @@
+:host p{
+  white-space:pre-line;
+  color: var(--color-text-link);
+  font-size: var(--font-size-subheading);
+  font-family: var(--font-family-heading);
+
+  font-weight: 500;
+}
+:host h1{
+  color: var(--color-text-link);
+  font-size:xxx-large;
+  font-family: var(--font-family-heading);
+
+  font-weight: 500;
+}
+:host h2{
+  color: var(--color-text-link);
+  font-size:xx-large;
+  font-family: var(--font-family-heading);
+
+  font-weight: 500;
+}:host h3{
+  text-align: start;
+  color: var(--color-text-link);
+  font-size:large;
+  font-family: var(--font-family-heading);
+
+  font-weight: 500;
+}

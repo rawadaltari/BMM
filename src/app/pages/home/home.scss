@@ -1,0 +1,18 @@
+:host p{
+  white-space:pre-line;
+  color: var(--color-text-link);
+  font-size: var(--font-size-subheading);
+  font-family: var(--font-family-heading);
+
+  font-weight: 500;
+}
+.logo{
+  color: var(--color-text-link);
+  border:2px solid var(--color-text-link);
+  border-radius: 50vh;
+}
+
+.button-action{
+background-color: var(--color-button-primary);
+  color: var(--color-text-link);
+}

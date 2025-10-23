@@ -1,0 +1,176 @@
+/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+:root {
+
+  /* Colors */
+
+  --color-button-primary: #007BFF;       /* A vibrant, trustworthy blue (Primary Call-to-action, links) */
+
+  --color-button-secondary: #28A745;     /* A contrasting, energetic green (Secondary buttons, highlights) */
+
+  --color-background: #F8F9FA;    /* Very light gray/off-white (Main page background) */
+
+  --color-surface: #FFFFFF;       /* Pure white (Card backgrounds, content blocks) */
+
+  --color-text-primary: #343A40;  /* Dark charcoal gray (Main body text) */
+
+  --color-text-secondary: #6C757D;/* Medium gray (Subheadings, captions) */
+
+  --color-border: #DEE2E6;        /* Light gray (Separators, borders) */
+
+
+
+  /* Fonts */
+
+  --font-family-heading: 'Poppins', sans-serif;
+
+  --font-family-body: 'Roboto', sans-serif;
+
+
+
+  /* Font Sizes */
+
+  --font-size-h1: 2.5rem;          /* ~40px */
+
+  --font-size-h2: 2rem;            /* ~32px */
+
+  --font-size-h3: 1.5rem;          /* ~24px */
+
+  --font-size-subheading: 1.15rem; /* ~18px */
+
+  --font-size-body: 1rem;          /* ~16px (Base) */
+
+  --font-size-small: 0.875rem;     /* ~14px (Captions) */
+
+
+
+  /* Spacing (Standardized scale for consistency) */
+
+  --spacing-unit: 1rem;            /* 16px */
+
+  --spacing-small: 0.5rem;         /* 8px */
+
+  --spacing-medium: 1.5rem;        /* 24px */
+
+  --spacing-large: 3rem;           /* 48px */
+
+  --spacing-xl: 5rem;              /* 80px */
+
+
+
+  /* Layout & Structure */
+
+  --max-width-content: 1200px;
+
+  --layout-padding: 0 var(--spacing-unit);
+
+  --border-radius-default: 0.3rem;
+  --color-primary-accent: #ff00ff; /* Bright magenta/pink (part of the wave) */
+
+  --color-secondary-accent: #00ffff; /* Bright cyan/blue (part of the wave) */
+
+  --color-tertiary-accent: #ffff00; /* Bright yellow/orange (part of the wave) */
+
+  --color-background-dark: #12121e; /* Very dark, near-black blue/purple background */
+
+  --color-text-light: #ffffff; /* Pure white for main text and navigation */
+
+  --color-button-background: linear-gradient(90deg, #3a57e6, #7d44c9); /* Gradient for the main button */
+
+
+  /* Font Sizes */
+
+  --font-size-nav: 1.1rem;
+
+  --font-size-heading: 2rem; /* Title/Main heading (simulated for intro text) */
+
+
+
+
+  /* Spacing */
+
+  --padding-nav: 20px 0;
+
+  --padding-button: 15px 30px;
+
+  --color-background-primary: #1e1e2c; /* Dark, almost black background with a hint of purple/blue */
+
+  --color-background-secondary: #2f2f45; /* Slightly lighter shade for potential elements (not explicitly seen, but common) */
+
+
+  --color-text-link: #ffffff; /* White for navigation links */
+
+  --color-text-logo: #ffffff; /* White/Light text for Logo/Brand name */
+
+
+  --color-button-text: #ffffff; /* White text for the button */
+
+
+
+  /* ----------------- */
+
+  /* FONTS       */
+
+  /* ----------------- */
+
+  /* Assuming a clean, modern, sans-serif font like 'Poppins', 'Montserrat', or a system font */
+
+  --font-family-primary: 'Arial', sans-serif; /* Placeholder, looks like a standard sans-serif */
+
+  --font-size-heading-main: 2.5rem; /* "Color Models" main title */
+
+  --font-size-heading-sub: 1.5rem; /* "RGB Model", "CMYK Model" subheadings */
+
+  --font-size-navigation: 1.1rem; /* Navigation links */
+
+  --font-size-logo: 1.5rem; /* "ColorVision" logo text */
+
+
+
+  /* ----------------- */
+
+  /* SIZES & SPACING   */
+
+  /* ----------------- */
+
+  --spacing-margin-large: 4rem; /* Top/Bottom margin for main sections */
+
+  --spacing-padding-card: 2rem; /* Padding inside the content boxes */
+
+  --spacing-header-height: 4.5rem; /* Approximate height of the navigation bar */
+
+  --layout-max-width: 1200px; /* Max width for content container */
+
+
+
+  --image-placeholder-width: 90%; /* Width of the placeholder boxes */
+
+  --image-placeholder-height: 250px; /* Height of the placeholder boxes */
+
+  --card-gap: 2rem; /* Gap between the RGB and CMYK models */
+
+  /* Primary Accent (Used in Navigation Active State/Logo/Visuals): A bright, cool blue/cyan/purple gradient is implied, using a dark cyan for solid elements */
+
+  --color-accent-primary: #00BCD4; /* A vibrant Cyan */
+
+  /* Secondary Accent (Implied for hover/minor details): Purple/Magenta is also visible in the wave graphic */
+
+  --color-accent-secondary: #9C27B0; /* A vivid Purple */
+
+  /* Card/Section Background: Slightly darker than the main background, or the main background itself for content cards */
+
+  --color-card-background: #383838;
+
+  /* Button/Placeholder Background: Darker gray */
+
+  --color-placeholder-background: #444444;
+  /* Colors */
+
+
+
+
+
+}
+body{
+  background-color:var(--color-background-primary) ;
+}

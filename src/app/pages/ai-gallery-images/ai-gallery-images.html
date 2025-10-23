@@ -1,0 +1,112 @@
+<div class="main backdrop-brightness-50 flex flex-col w-full h-[100%] self-center text-wrap relative">
+  <div class="header flex items-center justify-center">
+    <h1>
+      AI Gallery
+    </h1>
+  </div>
+  <div class="models-template flex  flex-wrap gap-[1%] justify-around">
+    <div class="RGP flex flex-col  w-[90%] sm:w-[40%] items-center justify-center
+">
+
+      <h3 class=" w-[90%] p-[1%] rounded-3xl"  dir="rtl">
+        نموذج RGB
+      </h3>
+      <div class="flip-card">
+        <div class="flip-card-inner ">
+          <div class="flip-card-front backdrop-brightness-50">
+            <img ngSrc="assets\RgpExample.jpg" class="backdrop-brightness-50 w-[90%] sm:w-full h-[300PX]  p-[1%] rounded-3xl" width="1000" height="1000" priority  >
+          </div>
+          <div class="flip-card-back backdrop-brightness-50">
+            <p class="backdrop-brightness-50 w-[90%] p-[1%] rounded-3xl" dir="rtl">
+              {{AIRgpModelParagraph}}
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+     <div class="RGP flex flex-col  w-[90%] sm:w-[40%] items-center justify-center
+">
+      <h3 class=" w-[90%] p-[1%] rounded-3xl"  dir="rtl">
+        نموذج CMYK
+      </h3>
+       <div class="flip-card">
+         <div class="flip-card-inner ">
+           <div class="flip-card-front backdrop-brightness-50">
+             <img ngSrc="assets\CmykExample.jpg" class=" backdrop-brightness-50 w-[90%] sm:w-full h-[300PX]  p-[1%] rounded-3xl" width="1" height="1" priority  >
+           </div>
+           <div class="flip-card-back backdrop-brightness-50">
+             <p class="backdrop-brightness-50 w-[90%] p-[1%] rounded-3xl" dir="rtl">
+               {{AICmykModelParagraph}}
+             </p>
+           </div>
+         </div>
+       </div>
+
+    </div>
+     <div class="RGP flex flex-col  w-[90%] sm:w-[40%] items-center justify-center
+">
+      <h3 class=" w-[90%] p-[1%] rounded-3xl"  dir="rtl">
+        تدرج اللون الرمادي
+      </h3>
+       <div class="flip-card">
+         <div class="flip-card-inner ">
+           <div class="flip-card-front backdrop-brightness-50">
+             <img ngSrc="assets\Graessyale.jpg" class=" backdrop-brightness-50 w-[90%] sm:w-full h-[300PX]  p-[1%] rounded-3xl" width="1" height="1" priority  >
+           </div>
+           <div class="flip-card-back backdrop-brightness-50">
+             <p class="backdrop-brightness-50 w-[90%] p-[1%] rounded-3xl" dir="rtl">
+               {{AIGrayscaleParagraph}}
+             </p>
+           </div>
+         </div>
+       </div>
+
+    </div>
+     <div class="RGP flex flex-col  w-[90%] sm:w-[40%] items-center justify-center
+">
+      <h3 class=" w-[90%] p-[1%] rounded-3xl"  dir="rtl">
+        تقاطع الفن والرقمنة
+      </h3>
+       <div class="flip-card">
+         <div class="flip-card-inner ">
+           <div class="flip-card-front backdrop-brightness-50">
+             <img ngSrc="assets\SymbaycAiDesign.jpg" class=" backdrop-brightness-50 w-[90%] sm:w-full h-[300PX]  p-[1%] rounded-3xl" width="1" height="1" priority  >
+           </div>
+           <div class="flip-card-back backdrop-brightness-50">
+             <p class="backdrop-brightness-50 w-[90%] p-[1%] rounded-3xl" dir="rtl">
+               {{AIRgpDigitalImagesParagraph}}
+             </p>
+           </div>
+         </div>
+       </div>
+
+    </div>
+
+</div>
+  <button (click)="openDialog()" class="button-action rounded-[10vh] cursor-pointer text-wrap p-[1%]" dir="rtl">
+    <img ngSrc="assets\maximize-3.svg" width="25" height="25" priority>
+    عرض المزيد
+  </button>
+</div>
+
+
+
+<!-- Dialog -->
+<div class="custom-dialog sm:w-[50%] sm:h-[50%] h-[80%] w-[100%] sm:left-[25%] left-[0%] backdrop-brightness-100 flex flex-col" [class.show]="isDialogOpen">
+  <div class="header-dialog flex items-center justify-between h-[4rem] w-full bg-[var(--color-button-primary)]">
+    <button class="cursor-pointer" (click)="closeDialog()">  <img ngSrc="assets\x-circle.svg" class="image" width="50" height="50" priority></button>
+    <h2>كيف يعمل الذكاء الصناعي في توليد هذه الصور؟</h2>
+  </div>
+  <div class="dialog-content">
+<p class="backdrop-brightness-50 w-[90%] h-fit p-[1%] text-wrap rounded-3xl" dir="rtl">
+  {{AIFirstDialogImagesParagraph}}
+</p>
+    <p class="backdrop-brightness-50 w-[90%] h-fit p-[1%] text-wrap rounded-3xl" dir="rtl">
+  {{AISecondDialogImagesParagraph}}
+</p>
+    <div class="dialog-actions">
+
+    </div>
+  </div>
+</div>

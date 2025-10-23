@@ -1,0 +1,15 @@
+<nav class="main-bar flex justify-evenly items-center">
+<div class="logo">
+  <img ngSrc="assets\logo_with_1e1e2c_background.svg" width="90" height="90" priority>
+</div>
+  <div class="tool-bar flex g-1 justify-between items-center w-[40%]">
+    @for (item of navigationItems; track item; let idx = $index) {
+    <a [href]="item.link">
+      {{ item.title }}
+    </a>
+    }
+  </div>
+  <div class="logo">
+    <img ngSrc="assets\search.svg" width="50" height="50" priority>
+  </div>
+</nav>

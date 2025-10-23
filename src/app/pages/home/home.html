@@ -1,0 +1,27 @@
+<div class="main-bar flex flex-col items-center justify-between h-[50%] self-center text-wrap
+top-[25%] relative">
+  <div class="paragraph backdrop-brightness-50 w-[90%] sm:w-[40%] p-[2%] rounded-3xl
+  text
+">
+    <p  dir="rtl">
+      {{theParagraph}}
+    </p>
+  </div>
+  <div class="actions flex flex-col items-center gap-[2vh] justify-center">
+    <div class="voice-action">
+      <div class="logo flex transition-all duration-700 gap-10px ease-in-out justify-between"  [ngClass]="{'w-[20vh] opacity-100 p-[1%]': playing,' w-[5vh] p-[15%] opacity-100': !playing
+    }" >
+      <img ngSrc="assets\audio.svg" class="cursor-pointer" width="50" height="50" priority (click)="playSound('audio')" >
+        <img *ngIf="playing"  ngSrc="assets\power.svg" class="cursor-pointer" width="50" height="50" priority (click)="stopSound()" >
+    </div>
+    </div>
+    <div class="button-action rounded-[10vh] w-[90%] text-wrap p-[2%]">
+      <button class="cursor-pointer" (click)="playSound('audio')">
+        <P dir="rtl">
+          {{wellcomeParagraph}}
+        </P>
+      </button>
+    </div>
+  </div>
+</div>
+

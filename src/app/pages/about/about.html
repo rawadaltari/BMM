@@ -1,0 +1,21 @@
+<div class="main-bar flex flex-col items-center justify-between h-[65%] gap-[1%] self-center text-wrap
+top-[15%] relative">
+  <div class="paragraph backdrop-brightness-50 w-[90%] sm:w-[40%] p-[2%] rounded-3xl
+  text
+">
+    <p  dir="rtl">
+      {{aboutParagraphItem}}
+    </p>
+
+</div>
+
+  <div class="paragraph backdrop-brightness-50 w-[90%] sm:w-[40%] p-[2%] rounded-3xl flex flex-wrap
+  text
+">
+    <h2 class="w-full" dir="rtl">فريق العمل:</h2>
+    <p class="w-[50%]" dir="ltr" *ngFor="let name of names">
+      {{ name }}
+    </p>
+</div>
+</div>
+
